@@ -1,8 +1,13 @@
 import React from 'react';
+import QuestionHeader from './QuestionHeader/QuestionHeader';
 
 class App extends React.Component {
     render() {
-        return <div>App</div>;
+        return(
+            <div>
+                <QuestionHeader />
+            </div>
+        );
     }
 }
 
