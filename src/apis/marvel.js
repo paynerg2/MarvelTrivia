@@ -4,7 +4,7 @@ import axios from 'axios';
 const KEY = '430edfdf9501f91d382b30a9feb42788';
 
 export default axios.create({
-    baseURL: 'http(s)://gateway.marvel.com/',
+    baseURL: 'https://gateway.marvel.com/',
     params: {
         apikey: KEY
     }
