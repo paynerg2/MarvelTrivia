@@ -1,7 +1,10 @@
 import React from 'react';
 
 const AnswerChoice = (props) => {
-    return <div className="ui attached segment">This answer choice is {props.isCorrect ? 'correct' : 'incorrect'}</div>;
+    const handleAnswerClicked = () => {
+        props.onClick(props.isCorrect);
+    };
+    return <div className="ui attached segment" onClick={handleAnswerClicked}>{props.text}</div>;
 };
 
 export default AnswerChoice;
