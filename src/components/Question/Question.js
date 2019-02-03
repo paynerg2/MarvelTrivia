@@ -15,7 +15,7 @@ const Question = (props) => {
     });
     return (
         <div>
-            <QuestionHeader text='question' />
+            <QuestionHeader text={props.question.question} />
             <div>{renderedAnswerList}</div>
         </div>
     );
